@@ -11,11 +11,11 @@ class Laboral{
 			case "miercoles":
 			case "jueves":
 			case "viernes":
-				System.out.println("Es la laborable");
+				System.out.println("\033[32mEs la laborable");
 				break;
 			case "sabado":
 			case "domingo":
-				System.out.println("No es la laborable");
+				System.out.println("\033[31mNo es la laborable");
 				break;
 		}
 	}
