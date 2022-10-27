@@ -11,10 +11,11 @@ public class Bucle27 {
             num = Math.round(num / 10);
             lenght++;
         }
+        System.out.print("Digitos pares: ");
         for (int i = 1; i <= lenght; i++) {
             ld = reverse % 10;
             if (ld % 2 == 0 && ld != 0) {
-                System.out.print(i + " ");
+                System.out.print(ld + " ");
                 contPar++;
                 sum += ld;
             }
