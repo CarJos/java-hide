@@ -15,6 +15,8 @@ public class Bucle10 {
                 sum -= num;
             }
         }
+        System.out.println(sum);
+        System.out.println(cont);
         media = (double)sum / cont;
         System.out.println("La media es de: " + media);
     }
