@@ -50,6 +50,74 @@ public class Arrays1D {
         // System.out.println("Menor: " + menor);
         // ----------------------------------------------------
         // ----------------------------------------------------
-        
+        // int maximo = 0, minimo;
+        // int[] numeros = new int[10];
+        // Scanner sc = new Scanner(System.in);
+        // for (int i = 0; i < 10; i++) {
+        //     System.out.println("Ingrese un numero: ");
+        //     numeros[i] = sc.nextInt();
+        // }
+        // minimo = numeros[0];
+        // for (int n : numeros) {
+        //     if (n > maximo) {
+        //         maximo = n;
+        //     }
+        //     if (n < minimo) {
+        //         minimo = n;
+        //     }
+        // }
+        // System.out.println("Lista de numeros");
+        // for (int n : numeros) {
+        //     if (n == maximo) {
+        //         System.out.println(n + " maximo");
+        //     }
+        //     else if (n == minimo) {
+        //         System.out.println(n + " minimo");
+        //     }
+        //     else{
+        //         System.out.println(n);
+        //     }
+        // }
+        // ----------------------------------------------------
+        // ----------------------------------------------------
+        int contPar = 0, contImpar = 0;
+        int[] numeros = new int[10];
+        Scanner sc = new Scanner(System.in);
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Ingrese un numero: ");
+            numeros[i] = sc.nextInt();
+            if (numeros[i] == 0) {
+                continue;
+            } else if (numeros[i] % 2 == 0){
+                contPar++;
+            } else{
+                contImpar++;
+            }
+        }
+        System.out.println("\n");
+        int[] par = new int[contPar], impar = new int[contImpar];
+        for (int i : numeros) {
+            System.out.print(i + " ");
+            if (numeros[i] % 2 == 0){
+                
+            }
+        }
+        for (int i : par) {
+            System.out.print(i + " ");
+        }
+        System.out.println("\n");
+        for (int i : impar) {
+            System.out.print(i);
+        }
+        // for (int i = 0; i < contPar; i++) {
+        //     numeros[i] = par[i];
+        // }
+        // for (int i = 0; i < contImpar; i++) {
+        //     numeros[i + contPar] = impar[i];
+        // }
+        // for (int i : numeros) {
+        //     System.out.println(i + " ");
+        // }
+
     }
 }
