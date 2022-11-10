@@ -7,14 +7,16 @@ public class TestBucle {
         //         System.out.print(i + " ");
         //     }
         // }
-        int num, ld;
+        int num, bin = 0;
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese un numero entero");
         num = sc.nextInt();
-        num = num / 10;
-        System.out.println(num);
-        // while (num != 0) {
-            
-        // }
+        while (num != 0) {
+            System.out.println(num);
+            System.out.println(num % 2 + " Binario");
+            bin = (bin * 10) + (num % 2);
+            num = num / 2;
+        }
+        System.out.println(bin);
     }
 }
